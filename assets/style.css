@@ -1,0 +1,151 @@
+/* Custom styles for the Course Bidding Dashboard */
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.dash-graph {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.checklist-item {
+  margin-bottom: 0.75rem;
+  padding: 4px 0;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Custom styling for dropdowns */
+.Select-control {
+  border-radius: 6px;
+}
+
+/* Chart container styling */
+#charts-container {
+  min-height: 400px;
+}
+
+/* Fixed height for chart containers */
+.chart-container {
+  height: 450px !important;
+  max-height: 450px !important;
+  overflow: hidden;
+}
+
+.chart-container .dash-graph {
+  height: 400px !important;
+  max-height: 400px !important;
+}
+
+/* Ensure plotly graphs don't expand beyond container */
+.chart-container .plotly-graph-div {
+  height: 400px !important;
+  max-height: 400px !important;
+}
+
+.chart-container .svg-container {
+  height: 400px !important;
+  max-height: 400px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dash-graph {
+    margin-bottom: 15px;
+  }
+
+  .chart-container {
+    height: 350px !important;
+    max-height: 350px !important;
+  }
+
+  .chart-container .dash-graph,
+  .chart-container .plotly-graph-div,
+  .chart-container .svg-container {
+    height: 300px !important;
+    max-height: 300px !important;
+  }
+}
+
+/* Prevent any chart from growing beyond its container */
+.js-plotly-plot {
+  height: 100% !important;
+  max-height: 400px !important;
+}
+
+/* Grid layout fixes */
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.col,
+.col-4 {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+/* Layout improvements for restructured design */
+.main-filters {
+  background-color: #f8f9fa;
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sections-filters {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  height: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main filters styling */
+.main-filters .form-label {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  color: #495057;
+  font-weight: 600;
+}
+
+.main-filters .form-label:first-child {
+  margin-top: 0;
+}
+
+/* Dropdown styling improvements */
+.main-filters .dash-dropdown,
+.sections-filters .dash-dropdown {
+  margin-bottom: 1rem;
+}
+
+/* Better spacing for sections */
+.sections-filters .form-label {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #495057;
+}
+
+/* Section title styling */
+.sections-filters h5 {
+  color: #495057;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
